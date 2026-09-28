@@ -8,10 +8,11 @@ import {
   HelpCircle, 
   Database,
   Sparkles,
-  CheckCircle2
+  CheckCircle2,
+  Bot
 } from 'lucide-react';
 
-export type NavTab = 'home' | 'upload' | 'dashboard' | 'analysis' | 'insights' | 'ask';
+export type NavTab = 'home' | 'upload' | 'dashboard' | 'analysis' | 'insights' | 'ask' | 'n8n';
 
 interface NavbarProps {
   currentTab: NavTab;
@@ -35,6 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'analysis', label: 'Sales Analysis', icon: TrendingUp },
     { id: 'insights', label: 'Insights & Anomalies', icon: Lightbulb },
     { id: 'ask', label: 'Ask BizInsight', icon: HelpCircle },
+    { id: 'n8n', label: 'n8n Chatbot', icon: Bot },
   ];
 
   return (

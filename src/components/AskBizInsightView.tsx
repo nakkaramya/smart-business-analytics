@@ -114,6 +114,48 @@ export const AskBizInsightView: React.FC<AskBizInsightViewProps> = ({ records })
         </div>
       </div>
 
+      {/* Dedicated n8n Cloud Webhook Chatbot Integration */}
+      <div className="bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 rounded-3xl p-6 text-white shadow-xl border border-indigo-500/20">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-indigo-500/30 border border-indigo-400/40 flex items-center justify-center text-indigo-300">
+              <Bot className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="text-base font-bold text-white">Live n8n Cloud Workflow Agent</h3>
+                <span className="text-[10px] bg-emerald-500/30 text-emerald-300 border border-emerald-400/40 font-semibold px-2 py-0.5 rounded-full">
+                  Webhook Connected
+                </span>
+              </div>
+              <p className="text-xs text-indigo-200">
+                Connected to endpoint: <code className="bg-black/30 px-1.5 py-0.5 rounded text-indigo-100 font-mono text-[11px]">ramya9676.app.n8n.cloud/webhook/.../chat</code>
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="https://ramya9676.app.n8n.cloud/webhook/98a47225-b4e0-4f61-b3bd-997dc05ae3fe/chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold backdrop-blur-sm transition-all self-start sm:self-center"
+          >
+            <span>Open in New Tab</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        {/* Embedded Live Iframe */}
+        <div className="mt-5 rounded-2xl overflow-hidden border border-white/10 bg-slate-950/80 shadow-2xl h-[520px]">
+          <iframe
+            src="https://ramya9676.app.n8n.cloud/webhook/98a47225-b4e0-4f61-b3bd-997dc05ae3fe/chat"
+            title="n8n Business Intelligence Agent"
+            className="w-full h-full border-0 rounded-2xl bg-white"
+            allow="clipboard-write"
+          />
+        </div>
+      </div>
+
       {/* Agent Workflow Explanation Banner (Section 14 & 15) */}
       <div className="bg-slate-900 text-slate-200 rounded-2xl p-4 sm:p-5 text-xs border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-3">

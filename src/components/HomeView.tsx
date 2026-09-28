@@ -97,6 +97,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <span>Try Sample Data</span>
             <span className="text-xs text-slate-400 font-normal">(Instant Demo)</span>
           </button>
+
+          <button
+            onClick={() => onNavigate('n8n')}
+            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold text-sm shadow-md shadow-purple-200 transition-all flex items-center justify-center gap-2"
+          >
+            <MessageSquareCode className="w-4 h-4" />
+            <span>Open n8n Chatbot</span>
+          </button>
         </div>
 
         {hasData && (

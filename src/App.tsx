@@ -13,11 +13,13 @@ import { DashboardView } from './components/DashboardView';
 import { AnalysisView } from './components/AnalysisView';
 import { InsightsView } from './components/InsightsView';
 import { AskBizInsightView } from './components/AskBizInsightView';
+import { N8nChatView } from './components/N8nChatView';
 import { SAMPLE_CSV_RAW } from './utils/sampleData';
 import { cleanAndProcessCSV } from './services/dataCleaner';
 import { DataEngine } from './services/dataEngine';
 import { BusinessRecord, CleaningSummary, ColumnProfile, DatasetStats, RawRow } from './types/data';
 import { CheckCircle2, Database, ShieldCheck, Sparkles } from 'lucide-react';
+import { N8nChatWidget } from './components/N8nChatWidget';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<NavTab>('home');
@@ -141,7 +143,14 @@ export default function App() {
         {currentTab === 'ask' && (
           <AskBizInsightView records={records} />
         )}
+
+        {currentTab === 'n8n' && (
+          <N8nChatView records={records} />
+        )}
       </main>
+
+      {/* Floating n8n Cloud Chatbot Widget */}
+      <N8nChatWidget webhookUrl="https://ramya9676.app.n8n.cloud/webhook/98a47225-b4e0-4f61-b3bd-997dc05ae3fe/chat" />
 
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 mt-auto py-8">
