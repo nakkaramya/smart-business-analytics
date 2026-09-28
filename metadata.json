@@ -1,0 +1,6 @@
+{
+  "name": "BizInsight Agent",
+  "description": "A smart data intelligence platform for small businesses to analyze CSV data, detect anomalies, uncover sales insights, and get actionable recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
